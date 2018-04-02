@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 11.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20171201T163000Z
+DTEND:20171201T170000Z
+SUMMARY:The Learning Commons Appointment
+LOCATION:Doon
+DESCRIPTION: The appointment is with Jeffrey Pritchard on the Doon Fall 2017 schedule and is for Sarav Kular.
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR
+

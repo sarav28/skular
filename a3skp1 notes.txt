@@ -1,0 +1,132 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int menu = 0;
+            int i = 0;
+            int x = 0;
+
+            Console.WriteLine("please enter numbers between 1 to 3");
+            menu = Convert.ToInt32(Console.ReadLine());
+
+            do
+            {
+                switch (menu)
+                {
+                    case 1:
+                        Console.WriteLine("option selected is to display even numbers");
+                        Console.WriteLine("eneter number upto which you want even numbers ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        for (i = 0; i <= x; i++)
+                        {
+                            i = i + 2;
+                            Console.WriteLine("even numbers are:" + i);
+                            Console.ReadLine();
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("option selected is to display a sequence of perfect squares");
+                        Console.WriteLine("enter number upto which you want square of numbers ");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        while (i <= x)
+                        {
+                            i = 1;
+                            i = i * i;
+                            i++;
+                            Console.WriteLine("square of numbers are :" + i);
+                            Console.ReadLine();
+                            continue;
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("Exit Program. /n Please enter numbers between 1 to 3");
+                        Console.ReadLine();
+                        break;
+                }
+            } while (i <= 3);
+        }
+    }
+}
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                int firstNum;
+                int secondNum;                   //Variables for equation
+                string operation;
+                int answer;
+
+                Console.WriteLine("Hello, welcome to Sarav's basic calculator!");
+                Console.ReadLine();
+
+                Console.Write("Enter the first number in your basic equation: ");
+                firstNum = Convert.ToInt32(Console.ReadLine());
+
+                //User input for equation
+                Console.Write("Now enter your second number in the basic equation: ");
+                secondNum = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Ok now enter your operation ( x , / , +, -) ");
+                operation = Console.ReadLine();
+
+                if (operation == "x")
+                {
+                    answer = firstNum * secondNum;
+                    Console.WriteLine(firstNum + " x " + secondNum + " = " + answer);
+                    Console.ReadLine();
+                }
+                else if (operation == "/")
+                {
+                    answer = firstNum / secondNum;
+                    Console.WriteLine(firstNum + " / " + secondNum + " = " + answer);
+                    Console.ReadLine();
+                }
+                //Getting answers
+                else if (operation == "+")
+                {
+                    answer = firstNum + secondNum;
+                    Console.WriteLine(firstNum + " + " + secondNum + " = " + answer);
+                    Console.ReadLine();
+                }
+                else if (operation == "-")
+                {
+                    answer = firstNum - secondNum;
+                    Console.WriteLine(firstNum + " - " + secondNum + " = " + answer);
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("Sorry that is not correct format! Please restart!");     //Catch
+                    Console.ReadLine();
+                }
+
+            }
+        }
+    }
+ }
+
+    
+
+

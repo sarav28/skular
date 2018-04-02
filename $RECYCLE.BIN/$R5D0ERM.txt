@@ -1,0 +1,92 @@
+ * Program to discuss methods
+ * 
+ * revision History
+ * Sarav Kular, Sept. 28, 2017
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sample_methods
+{
+    class Program
+    {
+      public static int  AddTwoIntegers(int firstInteger, int secondInteger)
+
+        { 
+            int sum;
+            sum = 0;
+            sum = firstInteger + secondInteger;
+            return sum;
+        }
+        static void Main(string[] args)
+        {
+            int number1;
+            int number2;
+            number1 = 0;
+            number2 = 0;
+            int sum;
+
+            Console.WriteLine("please enter first number");
+            number1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("please enter second number");
+            number2 = int.Parse(Console.ReadLine());
+
+            sum = AddTwoIntegers(number1, number2);
+            Console.WriteLine(sum);
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+
+ * Program to discuss methods
+ * 
+ * revision History
+ * Sarav Kular, Sept. 28, 2017
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sample_methods
+{
+    class Program
+    {
+      public static int  AddTwoIntegers(int firstInteger, int secondInteger)
+
+        { 
+            int sum;
+            sum = 0;
+            sum = firstInteger + secondInteger;
+            return sum;
+        }
+        static void Main(string[] args)
+        {
+            int number1;
+            int number2;
+            number1 = 0;
+            number2 = 0;
+            int sum;
+
+            Console.WriteLine("please enter first number");
+            number1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("please enter second number");
+            number2 = int.Parse(Console.ReadLine());
+
+            sum = AddTwoIntegers(number1, number2);
+            Console.WriteLine("adding"+number1+ "+" +number2+ "=" +sum+);
+            Console.ReadLine();
+
+        }
+    }
+}
+
